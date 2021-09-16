@@ -2832,7 +2832,7 @@ input, select, textarea {
 						border: 0;
 						color: #ffffff !important;
 						display: block;
-						padding: 0.85em 0;
+						padding: 0.35em 0;
 						text-decoration: none;
 					}
 
@@ -2874,7 +2874,7 @@ input, select, textarea {
 		color: #c0c0c0;
 		overflow: hidden;
 		padding: 4em 0 2em 0;
-		height: 50px;
+		height: 15px;
 	}
 
 		#footer .copyright {
