@@ -264,7 +264,7 @@
 															<h3>Research Experience</h3>
 															
 
-															<h5>Undergraduate Thesis Topic: A text detection method to detect text form natural scene images with connected components analysis and sliding window
+															<h5>Undergraduate Thesis Topic: A text detection method to detect text from natural scene images with connected components analysis and sliding window
 																method</h5>
 											<p> Thesis Defended: April 2017<br>
 												
@@ -303,14 +303,16 @@
 									
 									Technology : python, east text detection, tesseract OCR, tkinter gui<br>
 									This is an upgraded work of my undergrad thesis project on "Text detection from natural scene images". 
-									I have used the images to show both text detection with the EAST method and text recognition with Tesseract 4.
-									My image set contains natural scene text detection challenges(descrirbed below) and EAST text detector can successfully detected the bounding boxes having the text.
+									I have used OpenCV package which uses the EAST model for text detection and the tesseract package is for recognizing text 
+									in the bounding box detected for the text. My image set contains natural scene text detection challenges and EAST text detector can successfully detect the bounding boxes having the text.
 									<br>
 									Key Points : 
 								</p>
 								<ul style="font-size: medium;">
-										<li>Applying the EAST method on natural scene images for text detection</li>
-										<li>Once I have detected the bounding boxes having the text, the next step is to recognize text.</li>
+										<li>Loading Pre-trained EAST model and defining output layers and forward pass the image
+										</li>
+										<li>Derive the bounding boxes after applying non-max-suppression
+										</li>
 										<li>PSM for the Tesseract has been set accordingly to the image.</li>
 								</ul>
 
