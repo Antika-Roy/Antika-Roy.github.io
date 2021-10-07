@@ -9,6 +9,9 @@
 		<title>Portfolio of Antika Roy</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
@@ -65,7 +68,7 @@
 										Skilled in Java,mySQL. I am passionate about programming and enjoy working through the process from ideas and inspiration 
 										to standard compliant code.<br>
 										🌱 I’m currently learning Machine learning and working on Python projects. Check out my 
-									 <a href="https://drive.google.com/file/d/16ICGKZwEHSb2RFAcM-a_8M65SeGAzJCX/view?usp=sharing">resume</a>.</p>
+									 <a href="https://drive.google.com/file/d/1dXc7an60APu3KqU555lAkcgM8CWF1iiM/view?usp=sharing">resume</a>.</p>
 									</div>
 							</section>
 
@@ -288,173 +291,272 @@
 						<section id="six">
 							<div class="container">
 								<h3>Recent Projects</h3>
-								
+								<div id="accordion">
+									<h5>🖼️ Text detection and recognition from natural scene images through interactive Python Gui</h5>
+									
+									<div class="card">
+									  <div class="card-header" id="headingOne">
+										<h5 class="mb-0">
+										  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+											See Details->
+										  </button>
+										</h5>
+									  </div>
+								  
+									  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+										<div class="card-body">
+											<div class="projectimg">
+												<a href="#" class="video"><video width="320" height="240" controls>
+													<source src="images/zoom_0.mp4" type="video/mp4">
+													
+												  </video></a>
+												
+											</div>
+												
+											<p>  <a href="https://github.com/Antika-Roy/TextDetectionAndRecognition">🔗 Github link</a><br>
+												
+												Technology : python, east text detection, tesseract OCR, tkinter gui<br>
+												This is an upgraded work of my undergrad thesis project on "Text detection from natural scene images". 
+												I have used OpenCV package which uses the EAST model for text detection and the tesseract package is for recognizing text 
+												in the bounding box detected for the text. My image set contains natural scene text detection challenges and EAST text detector can successfully detect the bounding boxes having the text.
+												<br>
+												Key Points : 
+											</p>
+											<ul style="font-size: medium;">
+													<li>Loading Pre-trained EAST model and defining output layers and forward pass the image
+													</li>
+													<li>Derive the bounding boxes after applying non-max-suppression
+													</li>
+													<li>PSM for the Tesseract has been set accordingly to the image.</li>
+											</ul></div>
+									  </div>
+									</div>
+									<br><h5>🤖 Applying K-Means clustering algorithm on MNIST handwritten digits dataset</h5>
+									
+									<div class="card">
+									  <div class="card-header" id="headingTwo">
+										<h5 class="mb-0">
+										  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+											See Details->
+										  </button>
+										</h5>
+									  </div>
+									  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+										<div class="card-body">
+											<div class="projectimg">
+												<a href="#" class="image"><img src="images/k-means-example.png" alt="" href=""/></a>
+												
+											</div>
+												
+											<p> <a href="https://github.com/Antika-Roy/kMeansClusteringWithMNISTDigitDataset">🔗 Github link</a><br>
+												
+												Technology : python, scikit-learn, numpy, matplotlib<br>
+												Description: This is implementation of the K Means algorithm to classify hand written digits on MNIST digit dataset.MNIST digit dataset essentially contains 
+												pixel data of bunch of different images of numbers values that are handwritten from 0 to 9.K Means Clustering alrogithm classify these digits based on the pixel data.The challenge was to feed these two dimensional pixel valus to our model.<br>
+												Key Points : 
+											</p>
+											<ul style="font-size: medium;">
+													<li>Importing Modules sklearn,matplotlib,numpy</li>
+													<li>Loading the MNIST Data-set</li>
+													<li>Scoring and training the model</li>
+													<li>MatplotLib Visualization</li>
+											</ul></div>
+									  </div>
+									</div>
 
-								<h5>🖼️ Text detection and recognition from natural scene images through interactive Python Gui</h5>
-								<div class="projectimg">
-									<a href="#" class="video"><video width="320" height="240" controls>
-										<source src="images/zoom_0.mp4" type="video/mp4">
+									<br><h5>🤖 Applying SVM on a breast cancer data set to classify a tumor as either malignant or benign.</h5>
+				
+
+									<div class="card">
+									  <div class="card-header" id="headingThree">
+										<h5 class="mb-0">
+										  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+											See Details->
+										  </button>
+										</h5>
+									  </div>
+									  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+										<div class="card-body">
+										  
 										
-									  </video></a>
-									
-								</div>
-									
-								<p>  <a href="https://github.com/Antika-Roy/TextDetectionAndRecognition">🔗 Github link</a><br>
-									
-									Technology : python, east text detection, tesseract OCR, tkinter gui<br>
-									This is an upgraded work of my undergrad thesis project on "Text detection from natural scene images". 
-									I have used OpenCV package which uses the EAST model for text detection and the tesseract package is for recognizing text 
-									in the bounding box detected for the text. My image set contains natural scene text detection challenges and EAST text detector can successfully detect the bounding boxes having the text.
-									<br>
-									Key Points : 
-								</p>
-								<ul style="font-size: medium;">
-										<li>Loading Pre-trained EAST model and defining output layers and forward pass the image
-										</li>
-										<li>Derive the bounding boxes after applying non-max-suppression
-										</li>
-										<li>PSM for the Tesseract has been set accordingly to the image.</li>
-								</ul>
-
-								<h5>🤖 Applying K-Means clustering algorithm on MNIST handwritten digits dataset</h5>
-								<div class="projectimg">
-									<a href="#" class="image"><img src="images/k-means-example.png" alt="" href=""/></a>
-									
-								</div>
-									
-								<p> <a href="https://github.com/Antika-Roy/kMeansClusteringWithMNISTDigitDataset">🔗 Github link</a><br>
-									
-									Technology : python, scikit-learn, numpy, matplotlib<br>
-									Description: This is implementation of the K Means algorithm to classify hand written digits on MNIST digit dataset.MNIST digit dataset essentially contains 
-									pixel data of bunch of different images of numbers values that are handwritten from 0 to 9.K Means Clustering alrogithm classify these digits based on the pixel data.The challenge was to feed these two dimensional pixel valus to our model.<br>
-									Key Points : 
-								</p>
-								<ul style="font-size: medium;">
-										<li>Importing Modules sklearn,matplotlib,numpy</li>
-										<li>Loading the MNIST Data-set</li>
-										<li>Scoring and training the model</li>
-										<li>MatplotLib Visualization</li>
-								</ul>
-
-								<h5>🤖 Applying SVM on a breast cancer data set to classify a tumor as either cancerous(malignant) or non cancerous(benign).</h5>
-			
-									
-								<p> <a href="https://github.com/Antika-Roy/SVMonBreastCancerDataset">🔗 Github link</a><br>
-									<a href="https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29">🔗 Dataset used</a><br>
-									Technology : python, scikit-learn, svm<br>
-									
-									Description: I have trained my model with Support vector machine classifier on a breast cancer dataset which consists features describing a tumor cell nucleus with real-valued features like radius 
-									(mean of distances from center to points on the perimeter)
-									, texture (standard deviation of gray-scale values)
-									, perimeter
-									, area
-									, smoothness (local variation in radius lengths)
-									, compactness (perimeter^2 / area - 1.0)
-									, concavity (severity of concave portions of the contour)
-									, concave points (number of concave portions of the contour)
-									, symmetry.The svm classifier model predicts the value as malignant or benign.The highest accuracy score was 0.9736842105263158  <br>
-									Key Points : 
-								</p>
-								<ul style="font-size: medium;">
+									<p> <a href="https://github.com/Antika-Roy/SVMonBreastCancerDataset">🔗 Github link</a><br>
+										<a href="https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29">🔗 Dataset used</a><br>
+										Technology : python, scikit-learn, svm<br>
 										
-										<li>Testing kernel values and soft margin</li>
-										<li>Scoring and training the model</li>
-										<li>Comparing accuracy values to KNearestNeighbors</li>
-								</ul> 
-								
-
-								<h5>🤖 Kaggle Competition: Titanic - Machine Learning from Disaster</h5>
-								<p> <a href="https://www.kaggle.com/antikaroy/antika-titanic-ml001">🔗 Kaggle project link</a><br>
-									<a href="https://www.kaggle.com/c/titanic">🔗 Competition Link</a><br>
-									Description: The competition is simple: use machine learning to create a model that predicts which passengers survived the Titanic shipwreck.<br>
-									The Challenge: The sinking of the Titanic is one of the most infamous shipwrecks in history.
-									 On April 15, 1912, during her maiden voyage, the widely considered “unsinkable” RMS Titanic sank after colliding with an iceberg. 
-									 Unfortunately, there weren’t enough lifeboats for everyone onboard, resulting in the death of 1502 out of 2224 passengers and crew. 
-									 While there was some element of luck involved in surviving, it seems some groups of people were more likely to survive than others. In this challenge, I was asked to build a predictive model that answers the question: 
-									 “what sorts of people were more likely to survive?” using passenger data (ie name, age, gender, socio-economic class, etc).<br>
-									Technology : Python notebook, pandas ,scikit-learn, Random forest Model<br>
-									
-									Key Points : 
-								</p>
-								<ul style="font-size: medium;">
-										<li>Training Random Forest model for the competition</li>
-										<li>Submit predictions for the Kaggle competition</li>
-										
-								</ul>
-
-								<h5>🤖 Kaggle Competition:  Housing Prices Competition for Kaggle Learn Users</h5>
-								<p> <a href="https://www.kaggle.com/antikaroy/exercise-machine-learning-competitions">🔗 Kaggle project link</a><br>
-									<a href="https://www.kaggle.com/c/home-data-for-ml-course">🔗 Competition Link</a><br>
-									Description: Challenge : I have to use machine learning to create a model that predicts the sales price for each house. 
-									This competition's dataset proves that much more influences price negotiations than the number of bedrooms or a white-picket fence, 
-									with 79 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa, this competition challenges you to predict the final price of each home.<br>
-									Technology : python notebook, numpy, pandas ,scikit-learn, Random forest Model<br>
-									
-									Key Points : 
-								</p>
-								<ul style="font-size: medium;">
-										<li>Training Random Forest model for the competition</li>
-										<li>Submit predictions for the Kaggle competition</li>
-										
-								</ul>
-
-								<h5>🤖 Classify car safety as safe or unsafe Using k-nearest neighbors classifier on Car Evaluation Data Set</h5>
-								<p> <a href="https://github.com/Antika-Roy/carDataEvaluationUsingKNN">🔗 Github link</a><br>
-									<a href="https://archive.ics.uci.edu/ml/datasets/Car+Evaluation">🔗 Dataset used</a><br>
-									Description: Using K-nearest neighbors classifier to classify cars as safe or unsafe based on the features in the dataset.The model evaluates cars according to the following concept structure:
-									 overall price, buying price, price of the maintenance,technical characteristics, number of doors,persons capacity ,the size of luggage boot etc.
-									<br>
-									Technology : python, pandas ,scikit-learn<br>
-									
-									Key Points : 
-								</p>
-								<ul style="font-size: medium;">
-										<li>Training a KNN Classifier</li>
-										<li>Converting Non numeric data</li>
-										<li>Testing the model with different neighbour values</li>
-										<li>Matplotlib Visualization</li>
-								</ul>
-
-								<h5>🤖 Predicting a student's final grade using Linear Regression on Student Performance Data Set </h5>
-								 <div class="projectimg">
-									<a href="#" class="image"><img src="images/grade.PNG" alt="" href=""/></a>
-									
-								</div>
-								<p>
-									<a href="https://github.com/Antika-Roy/studentGradeAnalysis">🔗 Github link</a><br>
-									<a href="https://archive.ics.uci.edu/ml/datasets/Student+Performance">🔗 Dataset used</a><br>
-									Description:  Implementing the linear regression algorithm to predict students final grade based on a series of attributes like previous grades, study time, failures, absences, travel time to school etc. from student performance dataset.<br>
-									Technology : python, pandas ,scikit-learn, pickle, Matplotlib<br>
-									
-									Key Points : 
-								</p>
-								<ul style="font-size: medium;">
-										<li>Importing modules sklearn, numpy, pandas, matplotlib</li>
-										<li>Saving Model with best score to a new file using pickle.dump().</li>
-										<li>Training model multiple times for the best score</li>
-										<li>Plotting final grade with features to compare by matplotlib</li>
-								</ul>
-								
-								<h5>⚕️ e-medico</h5>
-								
-							   <p>
-								   <a href="https://gitlab.com/fahimhasan26897846/e-medico">🔗 GitLab Repository link</a><br>
-								   <a href="https://doctormanagementsystem.000webhostapp.com/">🔗 Website Link</a><br>
-								   Description:  Doctor management system.An online system for doctors as users and patients as third party users, creating a platform to serve and take appointment
-								   Technology : PHP, JavaScript, MySQL, Bootstrap, GitLab<br>
-								   
-								   Features:
-							   </p>
-							   <ul style="font-size: medium;">
-									<li>Doctors can set appointment days</li>
-									<li>Days to date conversion</li>
-									<li>Doctors can see patient list across a specific date</li>
-									<li>Fake doctor removal by admin</li>
-									<li>Online appointment system for patients</li>
-								</ul>
+										Description: I have trained my model with Support vector machine classifier on a breast cancer dataset which consists features describing a tumor cell nucleus with real-valued features like radius 
+										(mean of distances from center to points on the perimeter)
+										, texture (standard deviation of gray-scale values)
+										, perimeter
+										, area
+										, smoothness (local variation in radius lengths)
+										, compactness (perimeter^2 / area - 1.0)
+										, concavity (severity of concave portions of the contour)
+										, concave points (number of concave portions of the contour)
+										, symmetry.The svm classifier model predicts the value as malignant or benign.The highest accuracy score was 0.9736842105263158  <br>
+										Key Points : 
+									</p>
+									<ul style="font-size: medium;">
+											
+											<li>Testing kernel values and soft margin</li>
+											<li>Scoring and training the model</li>
+											<li>Comparing accuracy values to KNearestNeighbors</li>
+									</ul> </div>
+									  </div>
+									</div>
+									<br><h5>🤖 Kaggle Competition: Titanic - Machine Learning from Disaster</h5>
+									<div class="card">
+										<div class="card-header" id="headingFour">
+										  <h5 class="mb-0">
+											<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+												
+												See Details->
+											</button>
+										  </h5>
+										</div>
+										<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+										  <div class="card-body">
+											<p> <a href="https://www.kaggle.com/antikaroy/antika-titanic-ml001">🔗 Kaggle project link</a><br>
+												<a href="https://www.kaggle.com/c/titanic">🔗 Competition Link</a><br>
+												Description: The competition is simple: use machine learning to create a model that predicts which passengers survived the Titanic shipwreck.<br>
+												The Challenge: The sinking of the Titanic is one of the most infamous shipwrecks in history.
+												 On April 15, 1912, during her maiden voyage, the widely considered “unsinkable” RMS Titanic sank after colliding with an iceberg. 
+												 Unfortunately, there weren’t enough lifeboats for everyone onboard, resulting in the death of 1502 out of 2224 passengers and crew. 
+												 While there was some element of luck involved in surviving, it seems some groups of people were more likely to survive than others. In this challenge, I was asked to build a predictive model that answers the question: 
+												 “what sorts of people were more likely to survive?” using passenger data (ie name, age, gender, socio-economic class, etc).<br>
+												Technology : Python notebook, pandas ,scikit-learn, Random forest Model<br>
+												
+												Key Points : 
+											</p>
+											<ul style="font-size: medium;">
+													<li>Training Random Forest model for the competition</li>
+													<li>Submit predictions for the Kaggle competition</li>
+													
+											</ul> </div>
+										</div>
+									  </div>
+									  <br><h5>🤖 Kaggle Competition:  Housing Prices Competition for Kaggle Learn Users</h5>
+									  <div class="card">
+										<div class="card-header" id="headingFive">
+										  <h5 class="mb-0">
+											<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+												
+												See Details->
+											</button>
+										  </h5>
+										</div>
+										<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+										  <div class="card-body">
+											<p> <a href="https://www.kaggle.com/antikaroy/exercise-machine-learning-competitions">🔗 Kaggle project link</a><br>
+												<a href="https://www.kaggle.com/c/home-data-for-ml-course">🔗 Competition Link</a><br>
+												Description: Challenge : I have to use machine learning to create a model that predicts the sales price for each house. 
+												This competition's dataset proves that much more influences price negotiations than the number of bedrooms or a white-picket fence, 
+												with 79 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa, this competition challenges you to predict the final price of each home.<br>
+												Technology : python notebook, numpy, pandas ,scikit-learn, Random forest Model<br>
+												
+												Key Points : 
+											</p>
+											<ul style="font-size: medium;">
+													<li>Training Random Forest model for the competition</li>
+													<li>Submit predictions for the Kaggle competition</li>
+													
+											</ul> </div>
+										</div>
+									  </div>
+									  <br><h5>🤖 Classify car safety as safe or unsafe Using k-nearest neighbors classifier on Car Evaluation Data Set</h5>
+												
+									  <div class="card">
+										<div class="card-header" id="headingSix">
+										  <h5 class="mb-0">
+											<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+												See Details->
+											</button>
+										  </h5>
+										</div>
+										<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+										  <div class="card-body">
+											<p> <a href="https://github.com/Antika-Roy/carDataEvaluationUsingKNN">🔗 Github link</a><br>
+												<a href="https://archive.ics.uci.edu/ml/datasets/Car+Evaluation">🔗 Dataset used</a><br>
+												Description: Using K-nearest neighbors classifier to classify cars as safe or unsafe based on the features in the dataset.The model evaluates cars according to the following concept structure:
+												 overall price, buying price, price of the maintenance,technical characteristics, number of doors,persons capacity ,the size of luggage boot etc.
+												<br>
+												Technology : python, pandas ,scikit-learn<br>
+												
+												Key Points : 
+											</p>
+											<ul style="font-size: medium;">
+													<li>Training a KNN Classifier</li>
+													<li>Converting Non numeric data</li>
+													<li>Testing the model with different neighbour values</li>
+													<li>Matplotlib Visualization</li>
+											</ul> </div>
+										</div>
+									  </div>
+									  <br><h5>🤖 Predicting a student's final grade using Linear Regression on Student Performance Data Set </h5>
+											
+									  <div class="card">
+										<div class="card-header" id="headingSeven">
+										  <h5 class="mb-0">
+											<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+													See Details->
+											</button>
+										  </h5>
+										</div>
+										<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+										  <div class="card-body">
+											<div class="projectimg">
+												<a href="#" class="image"><img src="images/grade.PNG" alt="" href=""/></a>
+												
+											</div>
+											<p>
+												<a href="https://github.com/Antika-Roy/studentGradeAnalysis">🔗 Github link</a><br>
+												<a href="https://archive.ics.uci.edu/ml/datasets/Student+Performance">🔗 Dataset used</a><br>
+												Description:  Implementing the linear regression algorithm to predict students final grade based on a series of attributes like previous grades, study time, failures, absences, travel time to school etc. from student performance dataset.<br>
+												Technology : python, pandas ,scikit-learn, pickle, Matplotlib<br>
+												
+												Key Points : 
+											</p>
+											<ul style="font-size: medium;">
+													<li>Importing modules sklearn, numpy, pandas, matplotlib</li>
+													<li>Saving Model with best score to a new file using pickle.dump().</li>
+													<li>Training model multiple times for the best score</li>
+													<li>Plotting final grade with features to compare by matplotlib</li>
+											</ul> </div>
+										</div>
+									  </div>
+									  <br><h5>⚕️ E-medico</h5>
+									  <div class="card">
+										<div class="card-header" id="headingEight">
+										  <h5 class="mb-0">
+											<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseThree">
+												See Details->
+											</button>
+										  </h5>
+										</div>
+										<div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+										  <div class="card-body">
+											
+											<p>
+												<a href="https://gitlab.com/fahimhasan26897846/e-medico">🔗 GitLab Repository link</a><br>
+												<a href="https://doctormanagementsystem.000webhostapp.com/">🔗 Website Link</a><br>
+												Description:  Doctor management system.An online system for doctors as users and patients as third party users, creating a platform to serve and take appointment
+												Technology : PHP, JavaScript, MySQL, Bootstrap, GitLab<br>
+												
+												Features:
+											</p>
+											<ul style="font-size: medium;">
+												 <li>Doctors can set appointment days</li>
+												 <li>Days to date conversion</li>
+												 <li>Doctors can see patient list across a specific date</li>
+												 <li>Fake doctor removal by admin</li>
+												 <li>Online appointment system for patients</li>
+											 </ul>  </div>
+										</div>
+									  </div>
+								  </div>
 							
 							</div>
 
+							
 
 
 						</section>
@@ -510,6 +612,14 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+
+			
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+		
 
 	</body>
 </html>
